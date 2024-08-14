@@ -10,4 +10,4 @@ Outros CLI tools que uso constantemente podem ser vistos em `extras.md`.
 
 TODO:
 
-- [] Adicionar um LSP e autocomplete
+- [X] Adicionar um LSP e autocomplete <!-- OK, eu sei que não é o melhor do mundo mas já serve-->
