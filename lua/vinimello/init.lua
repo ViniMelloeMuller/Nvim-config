@@ -16,6 +16,8 @@ vim.cmd([[
 	:set tabstop=4
 	let mapleader = "\<SPACE>"
 	nnoremap <SPACE> <NOP>
+	nnoremap <leader>f /
+	map <silent> <leader><cr> :noh<cr>
 ]])
 
 require("vinimello.plugins")
