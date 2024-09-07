@@ -14,6 +14,7 @@ brew  <> mac
 * `git lg`: um alias simples.
 * `bat`: um cat melhorado.
 * `zoxide`: um `cd` melhorado. => integra bem com fzf e bat 
+* `ripgrep`: pesquisa dentro dos arquivos.
 
     ```
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
@@ -25,3 +26,4 @@ brew  <> mac
 3. [delta](https://github.com/dandavison/delta)
 4. [bat](https://github.com/sharkdp/bat)
 5. [zoxide](https://github.com/ajeetdsouza/zoxide)
+6. [ripgrep](https://github.com/BurntSushi/ripgrep)
