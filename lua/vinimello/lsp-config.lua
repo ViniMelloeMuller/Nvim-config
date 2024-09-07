@@ -27,10 +27,18 @@ lsp_zero.extend_lspconfig({
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  handlers = {
-    function(server_name)
-      require('lspconfig')[server_name].setup({})
-    end,
-  }
+	ensure_installed = {
+		"lua_ls",
+		"pyright",
+		"tsserver",
+	},
+	handlers = {
+		function(server_name)
+			if server_name == "tsserver" then
+				server_name = "ts_ls"
+			end
+			require('lspconfig')[server_name].setup({})
+		end,
+	}
 })
 
