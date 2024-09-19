@@ -10,6 +10,7 @@ return {
 			autocmd filetype cpp nnoremap <F4> :w <bar> :FloatermNew g++ % -o main.exe <CR>
 			autocmd filetype python nnoremap <F4> :w <bar> :FloatermNew --autoclose=0 python3 % <CR>
 			autocmd filetype fortran nnoremap <F4> :w <bar> :FloatermNew gfortran % -o main.exe <CR>
+			autocmd filetype rust nnoremap <F4> :w <bar> :FloatermNew rustc % -o main.exe <CR>
 			]])
 			end
 }
