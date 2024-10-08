@@ -16,6 +16,7 @@ vim.cmd([[
 	:set softtabstop=4
 	:set syntax=on
 	:set tabstop=4
+	:filetype plugin on
 	let mapleader = "\<SPACE>"
 	nnoremap <SPACE> <NOP>
 	nnoremap <leader>f /
