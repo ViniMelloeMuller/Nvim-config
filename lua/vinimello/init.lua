@@ -23,6 +23,7 @@ vim.cmd([[
 	map <silent> <leader><cr> :noh<cr>
 	nmap <leader>w :w!<cr>
 	map 0 ^
+	:set updatetime=300
 ]])
 
 require("vinimello.plugins")
