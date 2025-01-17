@@ -30,4 +30,3 @@ vim.cmd([[
 
 require("vinimello.plugins")
 require("vinimello.lazy")
-require("vinimello.lsp-config")
