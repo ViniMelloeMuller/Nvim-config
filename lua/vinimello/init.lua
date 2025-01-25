@@ -29,5 +29,14 @@ vim.cmd([[
 	:set updatetime=300
 ]])
 
+-- Set default shell to powershell if windows
+
+if vim.loop.os_uname().sysname == "Windows_NT" then
+	vim.opt.shell = "pwsh"
+	vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
+	vim.opt.shellquote = "\""
+	vim.opt.shellxquote = ""
+end
+
 require("vinimello.plugins")
 require("vinimello.lazy")
