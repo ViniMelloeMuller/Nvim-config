@@ -8,7 +8,4 @@ Outros CLI tools que uso constantemente podem ser vistos em `extras.md`.
 
 ---
 
-TODO:
-
-- [X] Adicionar um LSP e autocomplete <!-- OK, eu sei que não é o melhor do mundo mas já serve-->
-- [ ] Adicionar suporte ao Latex através do vimtex. <https://ejmastnak.com/tutorials/vim-latex/compilation/>
+Detalhe: importante instalar os servidores de linguagem por fora (scoop, brew)

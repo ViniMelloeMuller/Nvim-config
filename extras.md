@@ -16,7 +16,7 @@ brew  <> mac
 * `zoxide`: um `cd` melhorado. => integra bem com fzf e bat 
 * `ripgrep`: pesquisa dentro dos arquivos.
 
-    ```
+    ```bash
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     ```
 
