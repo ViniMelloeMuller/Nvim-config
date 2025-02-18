@@ -19,6 +19,7 @@ return {
 		require("lspconfig").clangd.setup {}
 		require("lspconfig").texlab.setup {}
 		require("lspconfig").gopls.setup {}
+		require("lspconfig").gdscript.setup {}
 	end,
 }
 
