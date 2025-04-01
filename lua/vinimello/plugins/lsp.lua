@@ -21,6 +21,7 @@ return {
 		require("lspconfig").texlab.setup {}
 		require("lspconfig").gopls.setup {}
 		require("lspconfig").gdscript.setup {}
+		require("lspconfig").hls.setup {}
 	end,
 }
 
