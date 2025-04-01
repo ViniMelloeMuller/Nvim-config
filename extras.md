@@ -1,13 +1,14 @@
-<!-- Plugin Manager: -->
-scoop <> windows
-brew  <> mac
+*Gerenciador de Plugins*
+scoop -> windows
+brew  -> mac
+
+*Tema*:
+* Catppuccin
 
 *FONTE*:
-1. [FiraCode](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip)
+* [FiraCode](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip)
 
-
-<!-- Ferramentas úteis -->
-
+*Ferramentas*:
 * `fzf`: fuzzy finder.
 * `eza`: um `ls` melhorado.
 * `delta`: highlight para git diff.
