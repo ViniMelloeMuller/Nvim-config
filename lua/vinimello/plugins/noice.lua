@@ -3,14 +3,26 @@ return {
   "folke/noice.nvim",
   event = "VeryLazy",
   opts = {
-    -- add any options here
+    presets = {
+      bottom_search=false,
+      command_palette=false,
+      inc_rename=false,
+      lsp_doc_border=false,
+      long_message_to_split=false
+    },
+    notify = {
+      enabled=true,
+    }
   },
   dependencies = {
-    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
     "MunifTanjim/nui.nvim",
-    -- OPTIONAL:
-    --   `nvim-notify` is only needed, if you want to use the notification view.
-    --   If not available, we use `mini` as the fallback
-    "rcarriga/nvim-notify",
-    }
+    {
+       "rcarriga/nvim-notify",
+       opts = {
+        render = "compact",
+        stages = "fade",
+        timeout = 2000,
+       },
+    },
+  },
 }
