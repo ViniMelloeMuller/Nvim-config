@@ -14,14 +14,20 @@ return {
 		},
 	},
 	config = function()
-		require("lspconfig").lua_ls.setup {}
-		require("lspconfig").html.setup {}
-		require("lspconfig").pyright.setup {}
-		require("lspconfig").clangd.setup {}
-		require("lspconfig").texlab.setup {}
-		require("lspconfig").gopls.setup {}
-		require("lspconfig").gdscript.setup {}
-		require("lspconfig").hls.setup {}
+		vim.lsp.enable("pyright")
+		vim.lsp.enable("lua_ls")
+		vim.lsp.enable("html")
+		-- vim.lsp.enable("pyright")
+		vim.lsp.enable("ty")
+		vim.lsp.enable("clangd")
+		vim.lsp.enable("texlab")
+		vim.lsp.enable("gopls")
+		vim.lsp.enable("gdscript")
+		vim.lsp.enable("hls")
 	end,
+	init = function()
+		vim.api.nvim_set_keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap=true, silent=true })
+		vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap=true, silent=true })
+	end
 }
 
