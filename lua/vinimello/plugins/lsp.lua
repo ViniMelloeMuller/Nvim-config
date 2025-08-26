@@ -14,11 +14,10 @@ return {
 		},
 	},
 	config = function()
-		vim.lsp.enable("pyright")
 		vim.lsp.enable("lua_ls")
 		vim.lsp.enable("html")
-		-- vim.lsp.enable("pyright")
-		vim.lsp.enable("ty")
+		vim.lsp.enable("pyright")
+		-- vim.lsp.enable("ty")
 		vim.lsp.enable("clangd")
 		vim.lsp.enable("texlab")
 		vim.lsp.enable("gopls")
