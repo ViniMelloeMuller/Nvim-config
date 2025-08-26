@@ -1,4 +1,3 @@
-local codecompanion = require "vinimello.plugins.codecompanion"
 return {
 	'saghen/blink.cmp',
 	dependencies = 'rafamadriz/friendly-snippets',
@@ -17,9 +16,6 @@ return {
 					module = 'render-markdown.integ.blink',
 					fallbacks = { 'lsp' },
 				},
-			},
-			per_filetype = {
-				codecompanion = {"codecompanion"},
 			},
 		},
 	},
