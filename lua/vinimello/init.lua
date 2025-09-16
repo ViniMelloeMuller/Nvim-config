@@ -1,33 +1,46 @@
--- Set vim defaults
+-- Opções Globais
+vim.g.mapleader = " "
 
-vim.cmd([[
-	:set autoindent
-	:set autoread
-	:set clipboard=unnamed
-	:set encoding=UTF-8
-	:set mouse=a
-	:set noundofile
-	:set nobackup
-	:set number
-	:set relativenumber
-	:set shiftwidth=4
-	:set smartindent
-	:set smarttab
-	:set softtabstop=4
-	:set syntax=on
-	:set tabstop=4
-	:set updatetime=300
-	:filetype plugin on
-	let mapleader = "\<SPACE>"
-	nnoremap <SPACE> <NOP>
-	nnoremap <leader>f /
-	map <silent> <leader><cr> :noh<cr>
-	nmap <leader>w :w!<cr>
-	nnoremap <silent> <C-j> :bn<CR>
-	nnoremap <silent> <C-k> :bN<CR>
-	map 0 ^
-	:set updatetime=300
-]])
+vim.opt.autoindent = true       -- Mantém a indentação da linha anterior
+vim.opt.smartindent = true      -- Indentação inteligente para C-like
+vim.opt.autoread = true         -- Recarrega arquivos modificados fora do vim
+vim.opt.clipboard = 'unnamed'   -- Usa a área de transferência do sistema
+vim.opt.encoding = 'UTF-8'      -- Define a codificação de caracteres
+vim.opt.mouse = 'a'             -- Habilita o uso do mouse em todos os modos
+vim.opt.updatetime = 300        -- Tempo em ms para escrever em swap e disparar CursorHold
+vim.opt.undofile = false        -- Não cria arquivos de undo persistentes
+vim.opt.backup = false          -- Não cria arquivos de backup
+
+-- UI e Aparência
+vim.opt.number = true           -- Mostra o número das linhas
+vim.opt.relativenumber = true   -- Mostra o número relativo das linhas
+
+-- Indentação e Tabs
+vim.opt.shiftwidth = 4          -- Tamanho da indentação
+vim.opt.softtabstop = 4         -- Número de espaços para um <Tab> no modo de inserção
+vim.opt.tabstop = 4             -- Número de espaços que um <Tab> representa
+vim.opt.smarttab = true         -- Insere tabs de acordo com 'shiftwidth'
+
+-- Filetype
+vim.cmd('filetype plugin on') -- A forma recomendada para isso ainda é via vim.cmd
+
+-- Atalhos (Keymaps)
+local keymap = vim.keymap.set
+
+-- Limpa a função padrão da barra de espaço para podermos usá-la como leader
+keymap('n', '<SPACE>', '<NOP>', { silent = true })
+
+-- Atalhos de utilidade
+keymap('n', '<leader>f', '/', { desc = "Procurar no arquivo" })
+keymap('n', '<leader><CR>', ':noh<CR>', { silent = true, desc = "Limpar highlight da busca" })
+keymap('n', '<leader>w', ':w!<CR>', { desc = "Forçar salvamento" })
+
+-- Navegação entre buffers
+keymap('n', '<C-j>', ':bn<CR>', { silent = true, desc = "Buffer seguinte" })
+keymap('n', '<C-k>', ':bN<CR>', { silent = true, desc = "Buffer anterior" })
+
+-- Mapeia 0 para ir ao primeiro caractere não-branco (comportamento de ^)
+keymap({'n', 'v'}, '0', '^', { desc = "Ir para o primeiro caractere" })
 
 -- Set default shell to powershell if windows
 
