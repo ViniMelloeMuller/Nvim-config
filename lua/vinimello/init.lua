@@ -40,6 +40,7 @@ end
 
 -- Enable native treesitter highlighting and folds
 vim.opt.foldmethod = "expr"
+vim.opt.foldlevelstart = 99
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 vim.api.nvim_create_autocmd("FileType", {
