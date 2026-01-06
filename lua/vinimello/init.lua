@@ -38,5 +38,15 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
 	vim.opt.shellxquote = ""
 end
 
+-- Enable native treesitter highlighting and folds
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+
+vim.api.nvim_create_autocmd("FileType", {
+	callback = function()
+		pcall(vim.treesitter.start)
+	end,
+})
+
 require("vinimello.plugins")
 require("vinimello.lazy")
