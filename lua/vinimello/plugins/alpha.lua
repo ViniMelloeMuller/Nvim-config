@@ -4,7 +4,7 @@ return {
 		local alpha = require("alpha")
 		local dashboard = require("alpha.themes.dashboard")
 		local session_button = dashboard.button(
-			"c", " > Restore Session", ':lua require("persistence").load()<CR>'
+			"c", "  > Restore Session", ':lua require("persistence").load()<CR>'
 		)
 
 		dashboard.section.buttons.val = {
