@@ -14,7 +14,6 @@ vim.cmd([[
 	:set smartindent
 	:set smarttab
 	:set softtabstop=4
-	:set syntax=on
 	:set tabstop=4
 	:set updatetime=300
 	:filetype plugin on
@@ -42,12 +41,6 @@ end
 vim.opt.foldmethod = "expr"
 vim.opt.foldlevelstart = 99
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-
-vim.api.nvim_create_autocmd("FileType", {
-	callback = function()
-		pcall(vim.treesitter.start)
-	end,
-})
 
 require("vinimello.plugins")
 require("vinimello.lazy")
