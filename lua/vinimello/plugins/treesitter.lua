@@ -6,6 +6,14 @@ return {
 		branch = 'main',
 		cmd = { "TSUpdate", "TSInstall", "TSLog", "TSUninstall" },
 		opts_extend = { "ensure_installed" },
+		config = function(_, opts)
+			require("nvim-treesitter").setup(opts)
+			vim.api.nvim_create_autocmd("FileType", {
+				callback = function()
+					pcall(vim.treesitter.start)
+				end,
+			})
+		end,
 		opts = {
 			ensure_installed = {
 				"bash",
