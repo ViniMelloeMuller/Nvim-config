@@ -17,12 +17,14 @@ return {
 		opts = {
 			ensure_installed = {
 				"bash",
+				"bibtex",
 				"c",
 				"diff",
 				"html",
 				"jsdoc",
 				"json",
 				"jsonc",
+				"latex",
 				"lua",
 				"luadoc",
 				"luap",

@@ -17,6 +17,7 @@ vim.cmd([[
 	:set tabstop=4
 	:set updatetime=300
 	:filetype plugin on
+	let g:tex_flavor = "latex"
 	let mapleader = "\<SPACE>"
 	nnoremap <SPACE> <NOP>
 	nnoremap <leader>f /
