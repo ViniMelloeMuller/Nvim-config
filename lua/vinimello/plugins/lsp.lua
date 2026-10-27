@@ -8,7 +8,7 @@ return {
 		local blink_caps = require("blink.cmp").get_lsp_capabilities()
 
 		local servers = {
-			"lua_ls", "html", "pyright", "clangd"
+			"lua_ls", "html", "pyright", "clangd", "gopls", "texlab"
 		}
 
 		for _, server in ipairs(servers) do
