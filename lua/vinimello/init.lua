@@ -48,5 +48,10 @@ vim.keymap.set("n", "<leader>b", function()
 	require("vinimello.actions").build()
 end, { desc = "Build (latex, C, C++, ...)", silent = true })
 
+-- Open the compiled artifact (PDF for latex)
+vim.keymap.set("n", "<leader>o", function()
+	require("vinimello.actions").open()
+end, { desc = "Open compiled file (latex PDF)", silent = true })
+
 require("vinimello.plugins")
 require("vinimello.lazy")
