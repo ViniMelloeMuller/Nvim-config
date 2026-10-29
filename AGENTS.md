@@ -32,7 +32,8 @@ Contexto, arquitetura e regras de execução para agentes operando na configura�
   - Preferência: Registre atalhos na tabela `keys` do spec Lazy para garantir lazy-loading limpo. Se dependente de contexto runtime, utilize `init` ou `config`.
   - Mapeamentos existentes para evitar conflitos:
     - `<leader>f` (`/`), `<leader>w` (`:w!`), `<leader><cr>` (`:noh`).
-    - `<leader>g` (live grep), `<leader>F` (find files), `<leader>b` (buffers) em [`telescope.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/telescope.lua).
+    - `<leader>g` (live grep), `<leader>F` (find files) em [`telescope.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/telescope.lua).
+    - `<leader>b` (build por filetype) e `<leader>o` (abrir artefato) em [`actions.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/actions.lua), mapeados em `init.lua`.
     - `<leader>n` (toggle árvore) em [`nvim-tree.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/nvim-tree.lua).
     - `<leader>lg` (lazygit) em [`lazgit.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/lazgit.lua).
     - `<leader>sr` (search & replace) em [`grug-far.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/grug-far.lua).
