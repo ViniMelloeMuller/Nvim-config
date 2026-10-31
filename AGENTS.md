@@ -35,6 +35,7 @@ Contexto, arquitetura e regras de execução para agentes operando na configura�
     - `<leader>g` (live grep), `<leader>F` (find files) em [`telescope.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/telescope.lua).
     - `<leader>b` (build por filetype) e `<leader>o` (abrir artefato) em [`actions.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/actions.lua), mapeados em `init.lua`.
     - `<leader>n` (toggle árvore) em [`nvim-tree.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/nvim-tree.lua).
+    - `<leader>d` (dashboard) em [`alpha.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/alpha.lua).
     - `<leader>sr` (search & replace) em [`grug-far.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/grug-far.lua).
     - `<leader>xx`, `<leader>xX`, `<leader>cs`, `<leader>cS` em [`trouble.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/trouble.lua).
     - `}` e `{` customizados para navegação de hunks em [`gitsigns.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/gitsigns.lua).

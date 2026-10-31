@@ -1,6 +1,10 @@
 return {
-    'goolord/alpha-nvim',
-    config = function ()
+	'goolord/alpha-nvim',
+	lazy = false,
+	keys = {
+		{ "<leader>d", "<cmd>Alpha<cr>", desc = "Dashboard (Alpha)" },
+	},
+	config = function ()
 		local alpha = require("alpha")
 		local dashboard = require("alpha.themes.dashboard")
 		local session_button = dashboard.button(
