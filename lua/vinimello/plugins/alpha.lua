@@ -8,15 +8,15 @@ return {
 		)
 
 		dashboard.section.buttons.val = {
-			-- dashboard.button( "e", "  > New file" , ":ene <BAR> startinsert <CR>"),
 			session_button,
-			dashboard.button( "lg","  > LazyGit"  , ":LazyGit<CR>"),
-			dashboard.button( "f", "󰈞  > Find file", ":Telescope find_files<CR>"),
-			dashboard.button( "g", "󰈞  > Ripgrep", ":Telescope live_grep<CR>"),
-			dashboard.button( "r", "  > Recent"   , ":Telescope oldfiles<CR>"),
-			dashboard.button( "u", "󰚰  > Update Packages"   , ":Lazy update<CR>"),
-			dashboard.button( "s", "  > Settings" , ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
-			dashboard.button( "q", "󰈆  > Quit NVIM", ":qa<CR>"),
+			dashboard.button( "e", "  > New File"            , ":ene <BAR> startinsert <CR>"),
+			dashboard.button( ".", "󰉓  > Browse CWD (nvim .)" , ":edit .<CR>"),
+			dashboard.button( "f", "󰈞  > Find File"           , ":Telescope find_files<CR>"),
+			dashboard.button( "g", "󰱼  > Live Grep"           , ":Telescope live_grep<CR>"),
+			dashboard.button( "r", "  > Recent Files"        , ":Telescope oldfiles<CR>"),
+			dashboard.button( "s", "  > Settings"            , ':lua require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })<CR>'),
+			dashboard.button( "l", "󰚰  > Plugins (Lazy)"      , ":Lazy<CR>"),
+			dashboard.button( "q", "󰈆  > Quit NVIM"           , ":qa<CR>"),
 		}
 
 		-- Set header: ref: https://patorjk.com/software/taag/#p=display&v=0&f=ANSI%20Shadow&t=Type%20Something%20
