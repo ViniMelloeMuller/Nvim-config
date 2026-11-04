@@ -13,6 +13,7 @@ Contexto, arquitetura e regras de execução para agentes operando na configura�
   4. [`lua/vinimello/plugins/`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/): Diretório escaneado automaticamente pelo Lazy:
      - [`plugins/init.lua`](file:///Users/vinimem/.config/nvim/lua/vinimello/plugins/init.lua): Lista de plugins VimScript/Lua simples sem configurações ou dependências (ex.: plugins do tpope).
      - `plugins/<nome>.lua`: Módulos individuais retornando tabelas de spec do Lazy.
+  5. [`after/ftplugin/`](file:///Users/vinimem/.config/nvim/after/ftplugin/): Configurações locais por tipo de arquivo (`tex`, `markdown`, `gitcommit`) com correção ortográfica (`spell`) e navegação de linhas.
 
 ### Ponteiros de Contexto
 - [extras.md](file:///Users/vinimem/.config/nvim/extras.md): Ferramentas externas de terminal (fzf, eza, ripgrep, bat) e fontes Nerd Font recomendadas.
